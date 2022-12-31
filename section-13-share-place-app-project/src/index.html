@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=GIVE_YOUR_KEY"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div id="map">
+      <p>Please enter an address!</p>
+    </div>
+    <form autocomplete="off">
+      <input type="text" id="address" />
+      <button type="submit">SEARCH ADDRESS</button>
+    </form>
+  </body>
 </html>
